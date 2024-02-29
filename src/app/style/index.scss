@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -5,12 +12,22 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #2a2a2a;
+    background-color: #242424;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --main-blue: #1f6fde;
+    --main-black: #1c1c1e;
+    --main-green: #02c66e;
+    --main-background: #f9f9f9;
+    --grey-1: #dcdcdc;
+    --grey-2: #bcbcbc;
+    --grey-3: #8f8f8f;
+    --grey-text: #8a8a8a;
+    --graphite: #3f3f3f;
 }
 
 body {
@@ -24,4 +41,11 @@ body {
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
+}
+
+#root {
+    position: relative;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }

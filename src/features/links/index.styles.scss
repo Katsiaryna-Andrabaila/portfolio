@@ -1,0 +1,50 @@
+.links {
+    position: fixed;
+    left: 0;
+    top: 35%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        width: 3rem;
+        height: 3rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .linkedin_link {
+        background-color: #0078d4;
+    }
+    .github_link {
+        background-color: #494d4e;
+    }
+    .telegram_link {
+        background-color: #29b6f6;
+    }
+    .whatsApp_link {
+        background-color: #40c351;
+    }
+    .messenger_link {
+        background: linear-gradient(
+            to top right,
+            #1292ff,
+            #2982ff 7.9%,
+            #4e69ff 23%,
+            #6559ff 35.1%,
+            #6d53ff 42.8%,
+            #df47aa 75.4%,
+            #ff6257 94.6%
+        );
+    }
+    a:hover {
+        width: 4rem;
+        transition: 0.3s all ease-in-out;
+        text-align: right;
+        img {
+            width: 3rem;
+        }
+    }
+}

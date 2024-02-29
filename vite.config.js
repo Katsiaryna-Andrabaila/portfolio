@@ -7,7 +7,7 @@ export default defineConfig({
     resolve: {
         alias: {
             app: '/src/app',
-            entity: '/src/entity',
+            entities: '/src/entities',
             features: '/src/features',
             pages: '/src/pages',
             shared: '/src/shared',
