@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Lines:wght@400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
 }
 
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Ubuntu';
     line-height: 1.5;
     font-weight: 400;
 
@@ -22,7 +26,8 @@
     --main-blue: #1f6fde;
     --main-black: #1c1c1e;
     --main-green: #02c66e;
-    --main-background: #f9f9f9;
+    --main-red: #ff6257;
+    --main-white: #f9f9f9;
     --grey-1: #dcdcdc;
     --grey-2: #bcbcbc;
     --grey-3: #8f8f8f;

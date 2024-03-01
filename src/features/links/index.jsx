@@ -1,4 +1,4 @@
-import './index.styles.scss';
+import './links.styles.scss';
 
 export const Links = () => {
     return (

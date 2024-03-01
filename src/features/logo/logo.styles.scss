@@ -1,0 +1,16 @@
+.logo {
+    position: relative;
+    font-family: 'Rubik Lines';
+    font-size: 4rem;
+    color: var(--grey-text);
+    cursor: pointer;
+
+    .logo_overlay {
+        position: absolute;
+        top: 5px;
+        left: 10%;
+        font-family: 'Alex Brush';
+        font-size: 3rem;
+        color: #ff6257;
+    }
+}
