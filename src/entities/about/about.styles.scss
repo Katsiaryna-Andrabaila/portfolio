@@ -1,0 +1,47 @@
+.about_wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 10rem;
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        b {
+            color: var(--main-blue);
+            font-size: 3rem;
+        }
+    }
+    p {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: var(--grey-2);
+        b,
+        a {
+            font-size: 1.7rem;
+            color: var(--main-blue);
+        }
+        a {
+            position: relative;
+            cursor: pointer;
+        }
+        a:hover,
+        &.active {
+            color: var(--main-white);
+        }
+        a:after {
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: var(--main-blue);
+            content: '';
+            transition: width 0.3s ease-out;
+        }
+
+        a:hover:after,
+        a:focus:after {
+            width: 100%;
+        }
+    }
+}

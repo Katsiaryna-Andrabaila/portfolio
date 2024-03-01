@@ -42,7 +42,7 @@ export const Header = () => {
                     </li>
                     <li>
                         <Link to="works" activeClass="active">
-                            my works
+                            works
                         </Link>
                     </li>
                     <li>

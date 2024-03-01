@@ -31,7 +31,7 @@ header {
                 a {
                     position: relative;
                     font-size: 1.5rem;
-                    color: var(--grey-text);
+                    color: var(--grey-3);
                     cursor: pointer;
                 }
                 a:hover,
@@ -39,12 +39,12 @@ header {
                     color: var(--main-white);
                 }
                 a:after {
-                    display: block;
                     position: absolute;
                     left: 0;
+                    display: block;
                     width: 0;
                     height: 2px;
-                    background-color: var(--main-red);
+                    background-color: var(--main-blue);
                     content: '';
                     transition: width 0.3s ease-out;
                 }
