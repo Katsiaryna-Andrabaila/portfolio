@@ -26,6 +26,7 @@ export const Works = () => {
                     <VisitLink link="https://stoptrip.com" />
                 </div>
             </section>
+            <div className="space"></div>
             <section className="project marinamk">
                 <div className="description">
                     <p>
@@ -47,6 +48,7 @@ export const Works = () => {
                     <img src="/images/marinamk_screen.png"></img>
                 </div>
             </section>
+            <div className="space"></div>
             <section className="project songbird">
                 <div className="img_container">
                     <img src="/images/songbird_screen.png"></img>
@@ -68,6 +70,7 @@ export const Works = () => {
                     <VisitLink link="https://songbird-rs.netlify.app/" />
                 </div>
             </section>
+            <div className="space"></div>
             <section className="project puzzle">
                 <div className="description">
                     <p>
@@ -90,6 +93,7 @@ export const Works = () => {
                     <img src="/images/puzzle_screen.png"></img>
                 </div>
             </section>
+            <div className="space"></div>
             <section className="project graphiql">
                 <div className="img_container">
                     <img src="/images/graphiql_screen.png"></img>

@@ -44,8 +44,17 @@ body {
     text-align: center;
     font-family: 'Ubuntu';
     color: rgba(255, 255, 255, 0.87);
+
     main {
         flex: 1;
         width: 100%;
     }
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--grey-1);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-blue);
 }

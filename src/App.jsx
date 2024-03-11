@@ -3,7 +3,7 @@ import { Links } from 'features/links';
 
 function App() {
     return (
-        <div>
+        <div className="app_wrapper">
             <MainContent />
             <Links />
         </div>
