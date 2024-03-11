@@ -1,3 +1,4 @@
+import { VisitLink } from 'features/visitLink';
 import './works.styles.scss';
 
 export const Works = () => {
@@ -22,31 +23,25 @@ export const Works = () => {
                         into English using i18next, lazy loading of SPA
                         application pages and many other things.
                     </p>
-                    <a href="https://stoptrip.com" target="_blank">
-                        visit
-                        <span>&#10230;</span>
-                    </a>
+                    <VisitLink link="https://stoptrip.com" />
                 </div>
             </section>
             <section className="project marinamk">
                 <div className="description">
                     <p>
-                        Stoptrip is a project for travelers which help people
-                        find housing, transport, events and many other useful
-                        things.
+                        MarinaMK is a website for nail master with very useful
+                        feature for clients of appointment for the selected day,
+                        time and procedure. Besides, there is a custom version
+                        of the admin panel for the master and translation into
+                        three languages - english, russian and arabian.
                         <br />
                         <br />
-                        On the project I&apos;m one of the two react developers,
-                        who is responsible for implementing of the adaptive
-                        layout from Figma, connection a location map with
-                        Leaflet.js and OpenLayers, translation of the website
-                        into English using i18next, lazy loading of SPA
-                        application pages and many other things.
+                        This project was made entirely by me - the backend and
+                        frontend parts - with a modern framework Next.js. The
+                        design and content were implemented in agreement with
+                        the master from Cairo.
                     </p>
-                    <a href="https://marinamk.vercel.app/" target="_blank">
-                        visit
-                        <span>&#10230;</span>
-                    </a>
+                    <VisitLink link="https://marinamk.vercel.app/" />
                 </div>
                 <div className="img_container">
                     <img src="/images/marinamk_screen.png"></img>
@@ -58,46 +53,38 @@ export const Works = () => {
                 </div>
                 <div className="description">
                     <p>
-                        Stoptrip is a project for travelers which help people
-                        find housing, transport, events and many other useful
-                        things.
+                        Songbird is a famous game in which a player needs to
+                        guess a bird by its voice.
                         <br />
                         <br />
-                        On the project I&apos;m one of the two react developers,
-                        who is responsible for implementing of the adaptive
-                        layout from Figma, connection a location map with
-                        Leaflet.js and OpenLayers, translation of the website
-                        into English using i18next, lazy loading of SPA
-                        application pages and many other things.
+                        It&apos;s an educational project while studying at The
+                        Rolling Scopes School. The game has welcome, quiz and
+                        bird gallery pages and translation into english and
+                        russian.
+                        <br />
+                        <br />
+                        This project was done on pure JS, SCSS and HTML.
                     </p>
-                    <a href="https://songbird-rs.netlify.app/" target="_blank">
-                        visit
-                        <span>&#10230;</span>
-                    </a>
+                    <VisitLink link="https://songbird-rs.netlify.app/" />
                 </div>
             </section>
             <section className="project puzzle">
                 <div className="description">
                     <p>
-                        Stoptrip is a project for travelers which help people
-                        find housing, transport, events and many other useful
-                        things.
+                        Gem puzzle is a famous game in which a player needs to
+                        arrange all cells in ascending order.
                         <br />
                         <br />
-                        On the project I&apos;m one of the two react developers,
-                        who is responsible for implementing of the adaptive
-                        layout from Figma, connection a location map with
-                        Leaflet.js and OpenLayers, translation of the website
-                        into English using i18next, lazy loading of SPA
-                        application pages and many other things.
+                        It&apos;s an educational project while studying at The
+                        Rolling Scopes School. The game has such features as
+                        drug-and-drop, game saving, table with best results,
+                        game duration display, custom frame sizes, sound
+                        accompaniment and CSS animation
+                        <br />
+                        <br />
+                        This project was done on pure JS, SCSS and HTML.
                     </p>
-                    <a
-                        href="https://gem-puzzle-15.netlify.app/"
-                        target="_blank"
-                    >
-                        visit
-                        <span>&#10230;</span>
-                    </a>
+                    <VisitLink link="https://gem-puzzle-15.netlify.app/" />
                 </div>
                 <div className="img_container">
                     <img src="/images/puzzle_screen.png"></img>
@@ -109,25 +96,21 @@ export const Works = () => {
                 </div>
                 <div className="description">
                     <p>
-                        Stoptrip is a project for travelers which help people
-                        find housing, transport, events and many other useful
-                        things.
+                        Graphiql is a teamwork where I had a successful
+                        experience as a team leader.
                         <br />
                         <br />
-                        On the project I&apos;m one of the two react developers,
-                        who is responsible for implementing of the adaptive
-                        layout from Figma, connection a location map with
-                        Leaflet.js and OpenLayers, translation of the website
-                        into English using i18next, lazy loading of SPA
-                        application pages and many other things.
+                        This project was made as a playground/IDE for graphQL
+                        requests to the Rick&Morty API. It has authorization
+                        through Firebase. Styles were implemented with Mantine.
+                        Key features also include sign-in with a google account,
+                        two languages, dark/light theme, query history, redirect
+                        when token expired and others.
+                        <br />
+                        <br />
+                        The project was made with React.js.
                     </p>
-                    <a
-                        href="https://qraphiql-app-react-rsschool.netlify.app/"
-                        target="_blank"
-                    >
-                        visit
-                        <span>&#10230;</span>
-                    </a>
+                    <VisitLink link="https://qraphiql-app-react-rsschool.netlify.app/" />
                 </div>
             </section>
         </div>
