@@ -11,7 +11,6 @@ export const MainContent = () => {
                 <About />
                 <Works />
             </main>
-            <div style={{ height: '200vh' }}></div>
         </>
     );
 };

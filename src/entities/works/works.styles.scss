@@ -1,4 +1,69 @@
 .works_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
     width: 90%;
-    margin: auto;
+    margin: 2rem auto;
+    padding-top: 5rem;
+    h2 {
+        font-size: 2.5rem;
+        color: var(--grey-1);
+    }
+    .project {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        .img_container {
+            width: 45vw;
+            max-height: 45vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            overscroll-behavior: contain;
+            img {
+                width: 100%;
+            }
+        }
+        .img_container::-webkit-scrollbar {
+            width: 5px;
+            background-color: var(--grey-1);
+        }
+        .img_container::-webkit-scrollbar-thumb {
+            background-color: var(--main-blue);
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 50vw;
+            p {
+                text-align: left;
+                font-size: 1.5rem;
+                color: var(--grey-2);
+            }
+            a {
+                position: relative;
+                display: block;
+                align-self: flex-end;
+                margin: 1rem 2rem 0 0;
+                padding: 0 2rem;
+                background-color: var(--main-blue);
+                text-align: right;
+                text-decoration: none;
+                font-size: 2rem;
+                color: var(--main-white);
+                transition: all 0.5s ease-in;
+                span {
+                    position: absolute;
+                    top: -15%;
+                    right: -15px;
+                    font-size: 2.5rem;
+                    color: var(--main-white);
+                    transition: all 0.3s ease-in;
+                }
+            }
+            a:hover span {
+                right: -25px;
+            }
+        }
+    }
 }
