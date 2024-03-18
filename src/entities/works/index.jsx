@@ -1,12 +1,43 @@
 import { VisitLink } from 'features/visitLink';
 import './works.styles.scss';
+import { useEffect, useRef } from 'react';
 
 export const Works = () => {
+    const ref1 = useRef(null);
+    const ref2 = useRef(null);
+    const ref3 = useRef(null);
+    const ref4 = useRef(null);
+    const ref5 = useRef(null);
+
+    const onEntry = (entry) => {
+        entry.forEach((change) => {
+            if (change.isIntersecting) {
+                change.target.classList.add('img_visible');
+            }
+        });
+    };
+
+    useEffect(() => {
+        const refArr = [ref1, ref2, ref3, ref4, ref5];
+        const options = { threshold: [0.5] };
+        const observer = new IntersectionObserver(onEntry, options);
+
+        refArr.forEach((ref) => {
+            const { current } = ref;
+
+            if (current) observer.observe(current);
+
+            return () => {
+                if (current) observer.unobserve(current);
+            };
+        });
+    }, []);
+
     return (
         <div className="works_wrapper" id="works">
             <h2>works</h2>
             <section className="project stoptrip">
-                <div className="img_container">
+                <div className="img_container" ref={ref1}>
                     <img src="/images/stoptrip_screen.png"></img>
                 </div>
                 <div className="description">
@@ -44,13 +75,13 @@ export const Works = () => {
                     </p>
                     <VisitLink link="https://marinamk.vercel.app/" />
                 </div>
-                <div className="img_container">
+                <div className="img_container" ref={ref2}>
                     <img src="/images/marinamk_screen.png"></img>
                 </div>
             </section>
             <div className="space"></div>
             <section className="project songbird">
-                <div className="img_container">
+                <div className="img_container" ref={ref3}>
                     <img src="/images/songbird_screen.png"></img>
                 </div>
                 <div className="description">
@@ -89,13 +120,13 @@ export const Works = () => {
                     </p>
                     <VisitLink link="https://gem-puzzle-15.netlify.app/" />
                 </div>
-                <div className="img_container">
+                <div className="img_container" ref={ref4}>
                     <img src="/images/puzzle_screen.png"></img>
                 </div>
             </section>
             <div className="space"></div>
             <section className="project graphiql">
-                <div className="img_container">
+                <div className="img_container" ref={ref5}>
                     <img src="/images/graphiql_screen.png"></img>
                 </div>
                 <div className="description">

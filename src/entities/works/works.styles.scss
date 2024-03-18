@@ -19,9 +19,14 @@
             overflow-y: auto;
             overflow-x: hidden;
             overscroll-behavior: contain;
+            transition: all 0.5s ease-in;
+            opacity: 0;
             img {
                 width: 100%;
             }
+        }
+        .img_container.img_visible {
+            opacity: 1;
         }
         .img_container::-webkit-scrollbar {
             width: 5px;
