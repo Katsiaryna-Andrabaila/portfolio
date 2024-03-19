@@ -5,10 +5,12 @@
     width: 90%;
     margin: 2rem auto;
     padding-top: 5rem;
+
     h2 {
         font-size: 2.5rem;
         color: var(--grey-1);
     }
+
     .project {
         display: flex;
         align-items: flex-start;
@@ -35,16 +37,19 @@
         .img_container::-webkit-scrollbar-thumb {
             background-color: var(--main-blue);
         }
+
         .description {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 50vw;
+
             p {
                 text-align: left;
                 font-size: 1.4rem;
                 color: var(--grey-2);
             }
+
             a {
                 position: relative;
                 display: block;
@@ -71,6 +76,7 @@
             }
         }
     }
+
     .project.work_visible {
         opacity: 1;
     }
