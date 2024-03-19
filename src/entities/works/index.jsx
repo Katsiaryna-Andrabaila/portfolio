@@ -12,7 +12,7 @@ export const Works = () => {
     const onEntry = (entry) => {
         entry.forEach((change) => {
             if (change.isIntersecting) {
-                change.target.classList.add('img_visible');
+                change.target.classList.add('work_visible');
             }
         });
     };
@@ -36,13 +36,13 @@ export const Works = () => {
     return (
         <div className="works_wrapper" id="works">
             <h2>works</h2>
-            <section className="project stoptrip">
-                <div className="img_container" ref={ref1}>
+            <section className="project stoptrip" ref={ref1}>
+                <div className="img_container">
                     <img src="/images/stoptrip_screen.png"></img>
                 </div>
                 <div className="description">
                     <p>
-                        Stoptrip is a project for travelers which help people
+                        Stoptrip is a project for travelers which helps people
                         find housing, transport, events and many other useful
                         things.
                         <br />
@@ -58,10 +58,10 @@ export const Works = () => {
                 </div>
             </section>
             <div className="space"></div>
-            <section className="project marinamk">
+            <section className="project marinamk" ref={ref2}>
                 <div className="description">
                     <p>
-                        MarinaMK is a website for nail master with very useful
+                        MarinaMK is a website for nail master with a useful
                         feature for clients of appointment for the selected day,
                         time and procedure. Besides, there is a custom version
                         of the admin panel for the master and translation into
@@ -75,13 +75,13 @@ export const Works = () => {
                     </p>
                     <VisitLink link="https://marinamk.vercel.app/" />
                 </div>
-                <div className="img_container" ref={ref2}>
+                <div className="img_container">
                     <img src="/images/marinamk_screen.png"></img>
                 </div>
             </section>
             <div className="space"></div>
-            <section className="project songbird">
-                <div className="img_container" ref={ref3}>
+            <section className="project songbird" ref={ref3}>
+                <div className="img_container">
                     <img src="/images/songbird_screen.png"></img>
                 </div>
                 <div className="description">
@@ -96,13 +96,13 @@ export const Works = () => {
                         russian.
                         <br />
                         <br />
-                        This project was done on pure JS, SCSS and HTML.
+                        This project was made with pure JS, SCSS and HTML.
                     </p>
                     <VisitLink link="https://songbird-rs.netlify.app/" />
                 </div>
             </section>
             <div className="space"></div>
-            <section className="project puzzle">
+            <section className="project puzzle" ref={ref4}>
                 <div className="description">
                     <p>
                         Gem puzzle is a famous game in which a player needs to
@@ -116,17 +116,17 @@ export const Works = () => {
                         accompaniment and CSS animation
                         <br />
                         <br />
-                        This project was done on pure JS, SCSS and HTML.
+                        This project was made with pure JS, SCSS and HTML.
                     </p>
                     <VisitLink link="https://gem-puzzle-15.netlify.app/" />
                 </div>
-                <div className="img_container" ref={ref4}>
+                <div className="img_container">
                     <img src="/images/puzzle_screen.png"></img>
                 </div>
             </section>
             <div className="space"></div>
-            <section className="project graphiql">
-                <div className="img_container" ref={ref5}>
+            <section className="project graphiql" ref={ref5}>
+                <div className="img_container">
                     <img src="/images/graphiql_screen.png"></img>
                 </div>
                 <div className="description">

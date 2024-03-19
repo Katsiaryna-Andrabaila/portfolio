@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer id="footer">
             <div className="footer_wrapper">
-                <Logo />
+                <Logo isFooter={true} />
                 <div className="footer_contact">
                     <a
                         href="https://www.linkedin.com/in/katsiaryna-andrabaila-94669b23a/"

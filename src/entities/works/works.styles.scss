@@ -13,14 +13,14 @@
         display: flex;
         align-items: flex-start;
         gap: 1rem;
+        opacity: 0;
+        transition: all 0.5s ease-in;
         .img_container {
             width: 45vw;
             max-height: 45vh;
             overflow-y: auto;
             overflow-x: hidden;
             overscroll-behavior: contain;
-            transition: all 0.5s ease-in;
-            opacity: 0;
             img {
                 width: 100%;
             }
@@ -70,5 +70,8 @@
                 right: -25px;
             }
         }
+    }
+    .project.work_visible {
+        opacity: 1;
     }
 }

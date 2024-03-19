@@ -1,7 +1,11 @@
 import './logo.styles.scss';
 
-export const Logo = () => {
+export const Logo = (props) => {
     const handleClick = () => {
+        if (props.isFooter) {
+            window.scrollTo(0, 0);
+            return;
+        }
         window.location.reload();
     };
 
