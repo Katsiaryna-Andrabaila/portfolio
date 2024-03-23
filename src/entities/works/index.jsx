@@ -73,7 +73,7 @@ export const Works = () => {
                         design and content were implemented in agreement with
                         the master from Cairo.
                     </p>
-                    <VisitLink link="https://marinamk.vercel.app/" />
+                    <VisitLink link="https://www.marinamk.net/" />
                 </div>
                 <div className="img_container">
                     <img src="/images/marinamk_screen.png"></img>
